@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+nav {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn{
+  background-color: chocolate;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: auto;
+   border-radius: 5px;
+}
+.btn-auto{
+  width: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.oneliner{
+  display: flex; 
+  flex-direction: column; 
+  /* align-items: start; */
+  /* justify-content: center; */
+
+  /* margin: 10px; */
+}
+.twoliner{
+  display: flex;
+  justify-content:end;
+  align-items: center;
+  width: auto;
+  gap: 10px;
+  
+}
+.internal{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.twoliner p {
+  margin: 0;
+
+  margin-right: 10px;
+}
+.twoliner button{
+  width: auto;
+  padding: 4px 8px; 
+  border-radius: 5px;
+
+}
+.container{
+  background-color:chocolate;
+  width: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.max{
+  width: auto;
+  padding: 5px 10px;
+
+  border-radius: 5px;
+}
+nav img {
+  max-width: 100px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  background-color: transparent;
+ 
+}
+
+button {
+  background-color: chocolate;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+.outside-border{
+  border: 2px solid black;
+}
+.new-btn {
+  border-radius: 10px !important;
+  padding: 20px !important; /* Removed 'auto' */
+}
+
+.new-btn:hover {
+  background-color: wheat !important;
+  color: chocolate !important;
+}
+.internal-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+button {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+input{
+  margin: 10px 0px;
+  user-select: text;
+}
+.space{
+  margin: 10px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    margin: 20px auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  form {
+    max-width: 600px;
+    margin: auto;
   }
 }
