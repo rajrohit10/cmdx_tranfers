@@ -95,7 +95,7 @@ button:disabled {
 }
 
 main {
-  max-width: 800px;
+  max-width: 600px;
   margin: 20px auto;
 }
 
@@ -140,13 +140,16 @@ input{
   margin: 10px 0px;
 }
 
-@media screen and (min-width: 768px) {
+
+
+/* Styles for screens smaller than 768px (mobile) */
+@media screen and (max-width: 767px) {
   main {
-    margin: 20px auto;
+    margin: 10px auto; /* Adjust the margin for smaller screens */
   }
 
   form {
-    max-width: 600px;
-    margin: auto;
+    max-width: 100%; /* Adjust the width for full width on smaller screens */
+    margin: 0px 10px; /* Adjust the margin for smaller screens */
   }
 }
